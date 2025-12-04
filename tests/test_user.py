@@ -23,7 +23,7 @@ class TestCreateUser:
         assert "accessToken" in response_json
         assert "refreshToken" in response_json
 
-    @allure.step("Создание пользователя, который уже зарегестрирован")
+    @allure.title("Создание пользователя, который уже зарегестрирован")
     @allure.description(
         "Проверяем, что при попытке повторной регистрации должен вернуться код 403 и сообщение 'User already exists'"
     )
